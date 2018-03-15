@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B5FE06FB2059BFF800A26DEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE06FA2059BFF800A26DEB /* AppDelegate.swift */; };
-		B5FE06FD2059BFF800A26DEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE06FC2059BFF800A26DEB /* ViewController.swift */; };
+		B5FE06FD2059BFF800A26DEB /* RMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE06FC2059BFF800A26DEB /* RMainViewController.swift */; };
 		B5FE07002059BFF800A26DEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FE06FE2059BFF800A26DEB /* Main.storyboard */; };
 		B5FE07022059BFF800A26DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FE07012059BFF800A26DEB /* Assets.xcassets */; };
 		B5FE07052059BFF800A26DEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FE07032059BFF800A26DEB /* LaunchScreen.storyboard */; };
 		B5FE07102059BFF800A26DEB /* ThriveMarketCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE070F2059BFF800A26DEB /* ThriveMarketCodeChallengeTests.swift */; };
 		B5FE071B2059BFF800A26DEB /* ThriveMarketCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE071A2059BFF800A26DEB /* ThriveMarketCodeChallengeUITests.swift */; };
+		B5FE07302059C68E00A26DEB /* RListClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE072F2059C68E00A26DEB /* RListClient.swift */; };
+		B5FE07322059C6A800A26DEB /* RList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE07312059C6A800A26DEB /* RList.swift */; };
+		B5FE07342059C6BB00A26DEB /* RListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE07332059C6BB00A26DEB /* RListDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		B5FE06F72059BFF800A26DEB /* ThriveMarketCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThriveMarketCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FE06FA2059BFF800A26DEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5FE06FC2059BFF800A26DEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5FE06FC2059BFF800A26DEB /* RMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMainViewController.swift; sourceTree = "<group>"; };
 		B5FE06FF2059BFF800A26DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5FE07012059BFF800A26DEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5FE07042059BFF800A26DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		B5FE07162059BFF800A26DEB /* ThriveMarketCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriveMarketCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FE071A2059BFF800A26DEB /* ThriveMarketCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriveMarketCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		B5FE071C2059BFF800A26DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FE072F2059C68E00A26DEB /* RListClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RListClient.swift; sourceTree = "<group>"; };
+		B5FE07312059C6A800A26DEB /* RList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RList.swift; sourceTree = "<group>"; };
+		B5FE07332059C6BB00A26DEB /* RListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RListDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,13 @@
 			isa = PBXGroup;
 			children = (
 				B5FE06FA2059BFF800A26DEB /* AppDelegate.swift */,
-				B5FE06FC2059BFF800A26DEB /* ViewController.swift */,
-				B5FE06FE2059BFF800A26DEB /* Main.storyboard */,
-				B5FE07012059BFF800A26DEB /* Assets.xcassets */,
-				B5FE07032059BFF800A26DEB /* LaunchScreen.storyboard */,
-				B5FE07062059BFF800A26DEB /* Info.plist */,
+				B5FE072D2059C0A700A26DEB /* Assets */,
+				B5FE072C2059C0A100A26DEB /* Model */,
+				B5FE072B2059C09500A26DEB /* Networking */,
+				B5FE072E2059C0CA00A26DEB /* Storyboards & Xibs */,
+				B5FE072A2059C08E00A26DEB /* Supporting Files */,
+				B5FE07292059C08700A26DEB /* Views */,
+				B5FE07282059C07B00A26DEB /* View Controllers */,
 			);
 			path = ThriveMarketCodeChallenge;
 			sourceTree = "<group>";
@@ -123,6 +131,63 @@
 				B5FE071C2059BFF800A26DEB /* Info.plist */,
 			);
 			path = ThriveMarketCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		B5FE07282059C07B00A26DEB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE06FC2059BFF800A26DEB /* RMainViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B5FE07292059C08700A26DEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5FE072A2059C08E00A26DEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE07062059BFF800A26DEB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5FE072B2059C09500A26DEB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE072F2059C68E00A26DEB /* RListClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B5FE072C2059C0A100A26DEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE07312059C6A800A26DEB /* RList.swift */,
+				B5FE07332059C6BB00A26DEB /* RListDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5FE072D2059C0A700A26DEB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE07012059BFF800A26DEB /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B5FE072E2059C0CA00A26DEB /* Storyboards & Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				B5FE06FE2059BFF800A26DEB /* Main.storyboard */,
+				B5FE07032059BFF800A26DEB /* LaunchScreen.storyboard */,
+			);
+			path = "Storyboards & Xibs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +258,7 @@
 				TargetAttributes = {
 					B5FE06F62059BFF800A26DEB = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					B5FE070A2059BFF800A26DEB = {
@@ -259,7 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FE06FD2059BFF800A26DEB /* ViewController.swift in Sources */,
+				B5FE07322059C6A800A26DEB /* RList.swift in Sources */,
+				B5FE07302059C68E00A26DEB /* RListClient.swift in Sources */,
+				B5FE07342059C6BB00A26DEB /* RListDataSource.swift in Sources */,
+				B5FE06FD2059BFF800A26DEB /* RMainViewController.swift in Sources */,
 				B5FE06FB2059BFF800A26DEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,12 +495,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VTH47R45YP;
-				INFOPLIST_FILE = ThriveMarketCodeChallenge/Info.plist;
+				INFOPLIST_FILE = "ThriveMarketCodeChallenge/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Carlos-Alba.ThriveMarketCodeChallenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,9 +512,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VTH47R45YP;
-				INFOPLIST_FILE = ThriveMarketCodeChallenge/Info.plist;
+				INFOPLIST_FILE = "ThriveMarketCodeChallenge/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Carlos-Alba.ThriveMarketCodeChallenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
